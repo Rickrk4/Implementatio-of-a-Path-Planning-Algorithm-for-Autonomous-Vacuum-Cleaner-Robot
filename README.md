@@ -473,3 +473,5 @@ L’algoritmo è stato implementato in c; si aspetta di trovare la mappa dell’
 Il file viene quindi letto dal codice del robot e viene generato un elenco di mosse da passare ad un path control() che si occuperà di soddisfare ciascun compito per poi passare a quello successivo.
 
 Per ottimizzare i movimento del robot gli spostamenti simili, cioè lungo la stessa dimensione vengono accorpati in un unico movimento. Per esempio la lita di movimenti [(0,1),(0,1),(0,1),(0,1),(0,1)] che dice al robot di compiere 5 spostamenti verso destra viene accorpata in un unico comando (0,5) che dice al robot di compiere uno spostamento di 5 caselle verso destra. Ad ogni cambio di direzione viene inserito un comando di rotazione relativa dell’angolo necessario al robot per orientarsi verso la prossima cella da raggiungere relativamente alla direzione attualmente puntata dal robot.
+
+Maggiori dettagli sull'implementazione dell'AI possono essere trovati sul (repository github del progetto)[https://github.com/Rickrk4/Implementation-of-the-Patter-Based-Genetic-Algorithm-for-the-MRCPP-problem-presented-by-Muzzaffer-Ka].

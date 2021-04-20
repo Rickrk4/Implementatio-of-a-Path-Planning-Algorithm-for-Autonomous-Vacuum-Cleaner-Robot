@@ -256,8 +256,9 @@ class Robot:
         # self.motion.evaluate_vw(0, 10, delta_t)
         self.e.evaluate(delta_t)
         #self.path_control.evaluate(delta_t)
-        #self.ga_path_control.evaluate(delta_t)
-        self.random_path_control.evaluate(delta_t)
+
+        self.ga_path_control.evaluate(delta_t)
+        #self.random_path_control.evaluate(delta_t)
 
         # print(self.motion.get_pose())
         # self.motion.evaluate(.5, .5, delta_t)

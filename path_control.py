@@ -32,7 +32,7 @@ class PathControl:
             obj = self.command_dict[cmd]
             if obj.target_got():
                 self.current_command = self.current_command + 1
-                print('nuovo comando', self.command_list[self.current_command])
+                #print('nuovo comando', self.command_list[self.current_command])
                 self.running = False
             else:
                 obj.evaluate(delta_t)
